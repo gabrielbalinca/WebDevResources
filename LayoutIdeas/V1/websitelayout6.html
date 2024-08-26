@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+    <style>
+      *{
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header{
+        height: 100px;
+      }
+      aside{
+        float: left;
+        width: calc(100% - 70% - 2%);
+      }
+      p{
+        text-align: center;
+      }
+      footer{
+        clear: both;
+      }
+      header, nav, footer, aside, .logo, .body{
+        border: 1px solid black;
+      }
+      header, nav, footer, aside, .logo, .body, .logo > p{
+        margin: 1%;
+      }
+      aside, .body{
+        margin-top: 0%;
+        height: 450px;
+      }
+
+      .body{
+        float: right;
+        width: calc(100% - 30% - 2%);
+      }
+
+    </style>
+  </head>
+  <body>
+    <section class = "logo">
+      <p>Logo</p>
+    </section>
+
+    <nav>
+      <p>Navigation</p>
+    </nav>
+    <header>
+      <p>Header</p>
+    </header>
+
+    <aside>
+      <p>Sidebar</p>
+    </aside>
+
+    <section class = "body">
+      <p>Body</p>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>

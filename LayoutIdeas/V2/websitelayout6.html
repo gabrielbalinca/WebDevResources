@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+    <style>
+      *{
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      header, nav, footer, aside, .logo, .body{
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+        border: 1px solid black;
+      }
+      .logo, nav, footer, header{
+        width: 100%;
+      }
+      aside, .body{
+        height: 450px;
+      }
+      aside{
+        width: calc(100% - 70% - 2%);
+      }
+      .body{
+        width: calc(100% - 30% - 2%);
+      }
+      header, nav, footer, aside, .body{
+        align-items: center;
+        justify-content: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section class = "logo">
+      <p>Logo</p>
+    </section>
+
+    <nav>
+      <p>Navigation</p>
+    </nav>
+    <header>
+      <p>Header</p>
+    </header>
+
+    <aside>
+      <p>Sidebar</p>
+    </aside>
+
+    <section class = "body">
+      <p>Body</p>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>

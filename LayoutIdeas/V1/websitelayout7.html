@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+    <style>
+      *{
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header, footer, section, nav{
+        border: 1px solid black;
+      }
+      nav, footer{
+        float: right;
+      }
+      header{
+        clear: both;
+        height: 250px;
+      }
+      header, footer, .topbar, .introtext, .box1, .box2, .box3{
+        margin: 1%;
+      }
+      header, footer, .introtext, .box1, .box2, .box3, .introtext{
+        text-align: center;
+      }
+      nav, .logo {
+        border: 0;
+      }
+      .topbar{
+        float: left;
+        width: calc(100% - 2%);
+      }
+      .logo, .box1, .box2, .box3{
+        float: left;
+      }
+      .box1, .box2, .box3{
+        margin-top: 0;
+        width: calc((100% - 6%) / 3);
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="topbar">
+      <section class = "logo">
+        <p>Logo</p>
+      </section>
+      <nav>
+        <p>Navigation</p>
+      </nav>
+    </section>
+
+    <header>
+      <p>Header</p>
+    </header>
+
+    <section class = "introtext">
+      <p>Intro Text Area</p>
+    </section>
+
+    <section class = "box1">
+      <p>Box1</p>
+    </section>
+
+    <section class = "box2">
+      <p>Box2</p>
+    </section>
+
+    <section class = "box3">
+      <p>Box3</p>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>

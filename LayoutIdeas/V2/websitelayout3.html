@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+  </head>
+
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header, section, aside, footer{
+    border: 1px solid black;
+    margin: 1%;
+    text-align: center;
+  }
+  header{
+    width: 100%;
+  }
+  header, section, aside{
+    padding: 5% 0;
+  }
+  section{
+    width: calc((100% - 35%) - 2%);
+  }
+  aside{
+    width: calc((100% - 65%) - 2%);
+  }
+  footer{
+    width: 100%;
+    padding: 1% 0;
+  }
+  </style>
+
+  <body>
+
+    <header>
+      <p>Header</p>
+    </header>
+
+    <aside>
+      <p>Aside Content</p>
+    </aside>
+
+    <section>
+      <p>Content</p>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+
+  </body>
+</html>

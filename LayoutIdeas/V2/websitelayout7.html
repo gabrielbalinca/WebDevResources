@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+    <style>
+      *{
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      header{
+        height: 200px;
+      }
+      footer{
+        justify-content: center;
+      }
+      header, footer, section, nav{
+        border: 1px solid black;
+      }
+      header, .introtext{
+        justify-content: center;
+        align-items: center;
+      }
+      header, footer, .topbar, .introtext{
+        margin: 1%;
+      }
+      nav, header, footer, .topbar, .contentbox, .introtext{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .box1, .box2, .box3{
+        width: calc(100% / 4);
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .introtext{
+        height: 150px;
+      }
+      .logo{
+        width: 30%;
+        border: 0;
+      }
+      .contentbox{
+        margin: 1%;
+        border: 0;
+        justify-content: space-between;
+      }
+      .topbar > nav{
+        width: 70%;
+        border: 0;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="topbar">
+      <section class = "logo">
+        <p>Logo</p>
+      </section>
+      <nav>
+        <p>Navigation</p>
+      </nav>
+    </section>
+
+    <header>
+      <p>Header</p>
+    </header>
+
+    <section class = "introtext">
+      <p>Intro Text Area</p>
+    </section>
+
+    <section class = "contentbox">
+      <section class = "box1">
+        <p>Box1</p>
+      </section>
+
+      <section class = "box2">
+        <p>Box2</p>
+      </section>
+
+      <section class = "box3">
+        <p>Box3</p>
+      </section>
+    </section>
+
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>

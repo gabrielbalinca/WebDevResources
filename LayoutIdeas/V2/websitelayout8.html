@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+  </head>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header{
+      margin-bottom: 1%;
+      height: 100px;
+    }
+    aside{
+      margin-right: 1%;
+      width: 30%;
+    }
+    header, footer, aside, .logo, .bodymaincontent{
+      border: 1px solid black;
+    }
+    body, header, footer, aside, .logo, .body, .maincontent, .bodymaincontent{
+      display: flex;
+    }
+    body, .maincontent, .bodymaincontent{
+      flex-direction: column;
+    }
+    header, footer, aside, .logo, .body{
+      flex-direction: row;
+    }
+    body, header, footer, aside, .logo, .bodymaincontent{
+      flex-wrap: wrap;
+    }
+    header, footer, aside, .logo, .bodymaincontent{
+      align-items: center;
+    }
+    header, footer, aside, .logo, .bodymaincontent{
+      justify-content: center;
+    }
+    footer, .body, .logo{
+      margin: 1%;
+    }
+    aside, .body{
+      height: 450px;
+    }
+    footer, .logo{
+      height: 50px;
+    }
+    .body, .maincontent{
+      flex-wrap: nowrap;
+    }
+    .logo, .body{
+      margin-bottom: 0;
+    }
+    .maincontent{
+      width: 70%;
+    }
+    .bodymaincontent{
+      height: 350px;
+    }
+  </style>
+
+  <body>
+
+    <section class = "logo">
+      <p>Logo</p>
+    </section>
+
+    <section class = "body">
+
+      <aside>
+        <p>Aside Content</p>
+      </aside>
+
+      <section class = "maincontent">
+
+        <header>
+          <p>Header</p>
+        </header>
+
+        <section class = "bodymaincontent">
+          <p>Body</p>
+        </section>
+
+      </section>
+
+    </section>
+
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+
+  </body>
+</html>

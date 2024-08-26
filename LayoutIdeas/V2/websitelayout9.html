@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+  </head>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      flex-direction: column;
+    }
+    body, nav, footer, .logo, .topbar, .smallboxes, .smallbox, .bigbox, .box{
+      display: flex;
+    }
+
+    footer, .topbar, .smallboxes, .bigbox{
+      flex-direction: row;
+    }
+    body, nav, .logo, .smallboxes, .bigbox{
+      flex-wrap: wrap;
+    }
+    footer, .topbar{
+      flex-wrap: nowrap;
+    }
+    footer, nav, .topbar, .logo, .smallbox, .box{
+      align-items: center;
+      justify-content: center;
+    }
+    footer, .topbar, .smallbox, .box{
+      border: 1px solid black;
+    }
+    footer, nav, .topbar, .logo, .smallbox, .box{
+      margin: 1%;
+    }
+    footer, .topbar{
+      height: 50px;
+    }
+    .logo{
+      width: 30%;
+    }
+    nav{
+      width: 70%;
+    }
+    .smallboxes{
+      min-height: 500px;
+    }
+    .smallbox{
+      width: calc((100% / 4) - 2%);
+      height: 100px;
+    }
+    .bigbox{
+      min-height: 175px;
+    }
+    .box{
+      width: calc((100% / 3) - 2%);
+      height: 150px;
+    }
+  </style>
+
+  <body>
+
+    <section class = "topbar">
+      <section class = "logo">Logo</section>
+      <nav>Navigation</nav>
+    </section>
+
+    <section class = "smallboxes">
+      <section class = "smallbox">Box1</section>
+      <section class = "smallbox">Box2</section>
+      <section class = "smallbox">Box3</section>
+      <section class = "smallbox">Box4</section>
+
+      <section class = "smallbox">Box5</section>
+      <section class = "smallbox">Box6</section>
+      <section class = "smallbox">Box7</section>
+      <section class = "smallbox">Box8</section>
+
+      <section class = "smallbox">Box9</section>
+      <section class = "smallbox">Box10</section>
+      <section class = "smallbox">Box11</section>
+      <section class = "smallbox">Box12</section>
+
+      <section class = "smallbox">Box13</section>
+      <section class = "smallbox">Box14</section>
+      <section class = "smallbox">Box15</section>
+      <section class = "smallbox">Box16</section>
+    </section>
+
+    <section class = "bigbox">
+      <section class = "box">Box1</section>
+      <section class = "box">Box2</section>
+      <section class = "box">Box3</section>
+    </section>
+
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+
+  </body>
+</html>
